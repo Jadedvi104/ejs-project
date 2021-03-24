@@ -1,0 +1,45 @@
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Challange 1</title>
+        <link rel="stylesheet" href="css/styles.css">
+
+    <%- include("partials/header") %>
+
+    </head>
+
+    <body>
+
+        
+       
+    <div class="container">
+        <h1>Compose</h1>
+
+
+            <form action="/compose" method="POST">
+                
+            <div class="form-group">
+
+                  <label class="form-label">Title</label>
+                  <input type="text" class="form-control" name="composeInput">
+               
+                
+                  <label class="form-label">Post</label>
+                  <textarea type="text" class="form-control" name="textarea" ></textarea>
+                
+
+                  
+            </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+
+              </form>
+    </div>
+        
+
+    </body>
+
+        <footer> <%- include("partials/footer") %> </footer>
+
+</html>

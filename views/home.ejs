@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+
+    <heaad >
+
+        <meta charset="utf-8">
+        <title>Challange 1</title>
+        <link rel="stylesheet" href="css/styles.css">
+        
+
+
+        <%- include("partials/header") %>
+
+    </heaad>
+
+    <body>
+
+
+        <div class="box" id="heading" >
+            <h1> Home </h1>
+            <p>
+                <%= startingContent %>
+            </p>
+
+            
+<!-- /// make button works like app.get("post/:userId") -->
+
+         <%   posts.forEach(function(post){ %>
+                
+                <h1> <%= post.title %> </h1>
+                <p>  <%= post.content.substring(0, 50) + " ..." %> <a href="/post/<%= post.title %>" >Read More</a></p>
+              
+          <%    });  %>
+            
+            
+
+          </div>
+          
+
+
+
+    </body>
+
+    <footer>
+
+        <%- include("partials/footer") %>
+
+    </footer>
+
+
+
+
+
+
+
+</html>
